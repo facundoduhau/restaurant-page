@@ -57,7 +57,6 @@ function makeHome() {
   githubLink.appendChild(copyright);
   footer.appendChild(githubLink);
 
-  // Append all sections to the existing wrapper
   wrapper.appendChild(header);
   wrapper.appendChild(main);
   wrapper.appendChild(footer);

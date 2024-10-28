@@ -2,25 +2,20 @@ import { makeHome } from "./home";
 import { makeMenu } from "./menu";
 
 function makeAbout() {
-  // Clear the wrapper
   const wrapper = document.querySelector(".wrapper");
   wrapper.innerHTML = "";
 
-  // Create header
   const header = document.createElement("div");
   header.className = "header";
 
-  // Create name div
   const name = document.createElement("div");
   name.className = "name";
   name.textContent = "Espresso Oasis";
   header.appendChild(name);
 
-  // Create buttons container
   const buttons = document.createElement("div");
   buttons.className = "buttons";
 
-  // Create individual buttons
   const buttonNames = ["Home", "Menu", "About"];
   buttonNames.forEach((btnName) => {
     const button = document.createElement("button");
@@ -62,11 +57,11 @@ function makeAbout() {
   contactMap.classList = "contact-map";
   contactMap.src =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.7646525956234!2d-58.49997399732249!3d-34.464094451552185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1c5819e3893%3A0xbee01b9d20e4fcb1!2sEl%20Catalejo!5e0!3m2!1sen!2sar!4v1730138871512!5m2!1sen!2sar";
-  contactMap.width = "1000px"; // Correctly set the width
+  contactMap.width = "1000px";
   contactMap.height = "450px";
   contactMap.style.border = "0";
   contactMap.allowFullscreen = true;
-  contactMap.referrerPolicy = "no-referrer-when-downgrade"; // Use referrerPolicy instead of width
+  contactMap.referrerPolicy = "no-referrer-when-downgrade";
 
   mapWrapper.appendChild(contactMessage);
   mapWrapper.appendChild(contactPhone);
@@ -78,19 +73,17 @@ function makeAbout() {
 
   const footer = document.createElement("footer");
   footer.className = "footer";
-  // Create github link
+
   const githubLink = document.createElement("a");
   githubLink.href = "https://github.com/facundoduhau";
   githubLink.target = "_blank";
 
-  // Create copyright paragraph
   const copyright = document.createElement("p");
   copyright.className = "copyright";
   copyright.textContent = "Copyright © facundoduhau";
   githubLink.appendChild(copyright);
   footer.appendChild(githubLink);
 
-  // Append all sections to the existing wrapper
   wrapper.appendChild(header);
   wrapper.appendChild(main);
   wrapper.appendChild(footer);
