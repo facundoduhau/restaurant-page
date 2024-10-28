@@ -1,4 +1,5 @@
 import { makeMenu } from "./menu";
+import { makeAbout } from "./about";
 
 function makeHome() {
   const wrapper = document.querySelector(".wrapper");
@@ -63,6 +64,9 @@ function makeHome() {
 
   const menuButton = document.querySelector(".menu");
   menuButton.addEventListener("click", makeMenu);
+
+  const aboutButton = document.querySelector(".about");
+  aboutButton.addEventListener("click", makeAbout);
 }
 
 export { makeHome };
