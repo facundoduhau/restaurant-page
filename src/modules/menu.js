@@ -1,3 +1,5 @@
+import { makeHome } from "./home";
+
 function makeMenu() {
   // Clear the wrapper
   const wrapper = document.querySelector(".wrapper");
@@ -142,6 +144,9 @@ function makeMenu() {
   wrapper.appendChild(header);
   wrapper.appendChild(main);
   wrapper.appendChild(footer);
+
+  const homeButton = document.querySelector(".home");
+  homeButton.addEventListener("click", makeHome);
 }
 
 export { makeMenu };

@@ -3,7 +3,6 @@ import { makeMenu } from "./menu";
 
 function init() {
   makeHome();
-  makeMenu();
 }
 
 export { init };

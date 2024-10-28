@@ -1,5 +1,8 @@
+import { makeMenu } from "./menu";
+
 function makeHome() {
   const wrapper = document.querySelector(".wrapper");
+  wrapper.innerHTML = "";
 
   const header = document.createElement("div");
   header.className = "header";
@@ -57,6 +60,9 @@ function makeHome() {
   wrapper.appendChild(header);
   wrapper.appendChild(main);
   wrapper.appendChild(footer);
+
+  const menuButton = document.querySelector(".menu");
+  menuButton.addEventListener("click", makeMenu);
 }
 
 export { makeHome };
