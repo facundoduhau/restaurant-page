@@ -56,7 +56,7 @@ function makeAbout() {
   const contactMap = document.createElement("iframe");
   contactMap.classList = "contact-map";
   contactMap.src =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.7646525956234!2d-58.49997399732249!3d-34.464094451552185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1c5819e3893%3A0xbee01b9d20e4fcb1!2sEl%20Catalejo!5e0!3m2!1sen!2sar!4v1730138871512!5m2!1sen!2sar";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.1679000341855!2d-76.3055041236948!3d36.862399764190094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba9995df079b17%3A0xd54a2aa54e769abc!2sEspressOasis!5e0!3m2!1sen!2sar!4v1730140751016!5m2!1sen!2sar";
   contactMap.width = "1000px";
   contactMap.height = "450px";
   contactMap.style.border = "0";
